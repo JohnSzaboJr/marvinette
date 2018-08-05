@@ -26,7 +26,9 @@ Copy the contents of the repo (with the exception of the README) to your
 day project folder. In effect this means the tester program named "marvinette", and it's supporting folder, named "marvinette_files". Write something like this:
 
 $> pwd
+
 /Users/user/amazing_marvinette
+
 $> mv m* ./Piscine/Day03/
 
 Step 3.
