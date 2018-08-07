@@ -8,8 +8,7 @@ it is extremely likely that it never will be.
 Currently supported projects:
 
 Day03
-
-(Yes, only Day03. Problem?)
+Day04 (until ex07)
 
 USAGE:
 ----------------------------------------------
