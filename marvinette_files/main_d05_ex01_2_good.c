@@ -4,6 +4,6 @@
 
 int main(void)
 {
-    ft_putstr("hello there!0123%%\n");
+    ft_putnbr(-0);
     return (0);
 }

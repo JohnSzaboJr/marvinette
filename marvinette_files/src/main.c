@@ -14,8 +14,8 @@ static void pt_header(void)
 
 static int	pt_args(int argc, char **argv)
 {
-	char	*projects[3] =
-	{"d03", "d04", 0};
+	char	*projects[4] =
+	{"d03", "d04", "d05", 0};
 	int		i;
 
 	i = 0;
@@ -50,6 +50,8 @@ static int	pt_check(char *day)
 	if (!ft_strcmp("d03", day) && !pt_check_d3())
 		return (0);
 	if (!ft_strcmp("d04", day) && !pt_check_d4())
+		return (0);
+	if (!ft_strcmp("d05", day) && !pt_check_d5())
 		return (0);
 	return (1);
 }

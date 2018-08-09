@@ -20,18 +20,7 @@ int	pt_test1(void);
 int	pt_test_print1(char *good);
 
 int	pt_check_d3(void);
-int	pt_check_d3_ex00(void);
-int	pt_check_d3_ex01(void);
-int	pt_check_d3_ex02(void);
-int	pt_check_d3_ex03(void);
-int	pt_check_d3_ex04(void);
-int	pt_check_d3_ex05(void);
-int	pt_check_d3_ex06(void);
-int	pt_check_d3_ex07(void);
-int	pt_check_d3_ex08(void);
-int	pt_check_d3_ex09(void);
-
 int	pt_check_d4(void);
-int	pt_check_d4_ex00(void);
+int	pt_check_d5(void);
 
 #endif
