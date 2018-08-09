@@ -9,7 +9,7 @@ Currently supported projects:
 
 Day03
 Day04 (until ex07)
-Day05 (until ex17)
+Day05 (until ex19)
 
 USAGE:
 ----------------------------------------------

@@ -581,6 +581,74 @@ int	pt_check_d5_ex17(void)
 	return (1);
 }
 
+int	pt_check_d5_ex18(void)
+{
+	int	i;
+
+	i = 1;
+	ft_printf("\n");
+	if (!pt_check_folder("EX18", "ex18"))
+		return (0);
+	if (!pt_check_file("ex18/ft_strlcat.c"))
+		return (0);
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex18.c \
+	./ex18/ft_strlcat.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex18_2.c \
+	./ex18/ft_strlcat.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex18_3.c \
+	./ex18/ft_strlcat.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex18_4.c \
+	./ex18/ft_strlcat.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	return (1);
+}
+
+int	pt_check_d5_ex19(void)
+{
+	int	i;
+
+	i = 1;
+	ft_printf("\n");
+	if (!pt_check_folder("EX19", "ex19"))
+		return (0);
+	if (!pt_check_file("ex19/ft_strlcpy.c"))
+		return (0);
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex19.c \
+	./ex19/ft_strlcpy.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	ft_printf("(%d) ", i);
+	if (!pt_check_compil("gcc -Wall -Werror -Wextra \
+	./marvinette_files/main_d05_ex19_2.c \
+	./ex19/ft_strlcpy.c -o ./marvinette_files/test1 2>/dev/null"))
+		return (0);
+	pt_test1();
+	i++;
+	return (1);
+}
+
 int	pt_check_d5(void)
 {
 	ft_printf(WHITE "Project: DAY05\n\n" RESET);
@@ -602,5 +670,7 @@ int	pt_check_d5(void)
 	pt_check_d5_ex15();
 	pt_check_d5_ex16();
 	pt_check_d5_ex17();
+	pt_check_d5_ex18();
+	pt_check_d5_ex19();
 	return (1);
 }
